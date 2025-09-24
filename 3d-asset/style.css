@@ -62,6 +62,7 @@ section {
   position: relative;
   width: 200vw;
   height: 100svh;
+  color: #0d0d0d;
   transform: translateX(0%);
 }
 
@@ -120,7 +121,7 @@ section {
   color: #e0dfdf;
 }
 
-.tooltip:last-child {
+.tooltip:nth-child(2) {
   justify-content: flex-end;
   align-items: flex-end;
 }
@@ -131,14 +132,14 @@ section {
   height: 1px;
   background-color: #5f5f5f;
   margin: 0.5rem 0;
-  transform: scaleX(0);
+  transform: scaleX(0%);
 }
 
-.tooltip:first-child .divider {
+.tooltip:nth-child(1) .divider {
   transform-origin: right center;
 }
 
-.tooltip:last-child .divider {
+.tooltip:nth-child(2) .divider {
   transform-origin: left center;
 }
 
